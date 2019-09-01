@@ -19,9 +19,16 @@ namespace WikipediaTestProject.PageFactory.WikiPageSelenium
             Framework.Framework.webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
             if (!PageLoadElement.Displayed)
             {
-                throw new Exception("Page is not loaded in 30 seconds");
+                throw new Exception("Page is not loaded in 60 seconds");
             }
         }
+        
+        public void GoBackToPreviousPage()
+        {
+
+            Framework.Framework.webDriver.Navigate().Back();
+        }
+
         #endregion
     }
 }

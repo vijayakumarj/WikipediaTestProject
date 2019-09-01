@@ -22,12 +22,18 @@ namespace WikipediaTestProject.Framework
             Framework.webDriver = new ChromeDriver(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
             Framework.webDriver.Url = "https://en.wikipedia.org/wiki/Selenium";
             Framework.webDriver.Navigate();
+            Framework.webDriver.Manage().Window.Maximize();
         }
         [TestCleanup]
         public void TestCleanup()
         {
 
             Framework.webDriver.Quit();
+        }
+
+        public void ReportError(Exception exception)
+        {
+            throw exception;
         }
     }
 }
