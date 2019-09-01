@@ -27,7 +27,6 @@ namespace WikipediaTestProject.Framework
         [TestCleanup]
         public void TestCleanup()
         {
-
             Framework.webDriver.Quit();
         }
 

@@ -30,6 +30,8 @@ namespace WikipediaTestProject.TestScripts
                 PageFactory.PageIndex.WikiPageOxygen.VerifyFeaturedArticleDisplayed();
 
                 ////        5.Take a screenshot of the right hand box that contains element properties
+                ////        The Screenshot will be saved in the bin folder
+                screenshotHandler.TakeScreenshot1(PageFactory.WikiPageOxygen.WikiPageOxygen.TableInfoBox);
 
                 ////        6.Count the number of pdf links in “References“
                 var numberOfLinks = PageFactory.PageIndex.WikiPageOxygen.CountPDFReferences();

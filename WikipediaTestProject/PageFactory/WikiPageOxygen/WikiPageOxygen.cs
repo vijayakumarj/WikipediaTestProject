@@ -16,6 +16,10 @@ namespace WikipediaTestProject.PageFactory.WikiPageOxygen
         {
             get { return Framework.Framework.webDriver.FindElement(By.XPath("//a[@href='/wiki/Wikipedia:Featured_articles']")); }
         }
+        public static IWebElement TableInfoBox
+        {
+            get { return Framework.Framework.webDriver.FindElement(By.XPath("//table[@class='infobox']")); }
+        }
         #endregion
 
         #region Operations
