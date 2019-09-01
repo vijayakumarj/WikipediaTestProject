@@ -36,6 +36,16 @@ namespace WikipediaTestProject.PageFactory.WikiHeader
         {
             TextSeacrhBox.SendKeys(valueToEnter);
         }
+
+        public void  VerifySecondSuggestion(string valueToCheck)
+        {
+            Framework.Framework.webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+            var element = Framework.Framework.webDriver.FindElement(By.XPath("//div[@class='suggestions']//a[@title='" + valueToCheck + "']"));
+            if (!element.Displayed)
+            {
+                throw new Exception("Page is not loaded in 60 seconds");
+            }
+        }
         #endregion
     }
 }

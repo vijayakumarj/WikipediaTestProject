@@ -33,9 +33,10 @@ namespace WikipediaTestProject.TestScripts
 
                 ////        6.Count the number of pdf links in “References“
                 var numberOfLinks = PageFactory.PageIndex.WikiPageOxygen.CountPDFReferences();
-                
+
                 ////        7.In the search bar on top right enter “pluto” and verify that the 2 nd suggestio is “Plutonium”
-                
+                PageFactory.PageIndex.WikiHeader.EnterTextInSearchBox("pluto");
+                PageFactory.PageIndex.WikiHeader.VerifySecondSuggestion("Plutonium");
             }
             catch (Exception exception)
             {

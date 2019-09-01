@@ -8,6 +8,7 @@ namespace WikipediaTestProject.PageFactory
     {
         public static WikiPageSelenium.WikiPageSelenium WikiPageSelenium { get { return new WikiPageSelenium.WikiPageSelenium(); } }
         public static WikiPageSelenium.ExternalPageSelenium ExternalPageSelenium { get { return new WikiPageSelenium.ExternalPageSelenium(); } }
+        public static WikiHeader.Header WikiHeader { get { return new WikiHeader.Header(); } }
         public static WikiPageOxygen.WikiPageOxygen WikiPageOxygen  { get { return new WikiPageOxygen.WikiPageOxygen(); } }
     }
 }
