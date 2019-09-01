@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/WikipediaTestProject/v16/Server/sqlite3/storage.ide-wal
+/.vs/WikipediaTestProject/v16/Server/sqlite3/storage.ide-shm
+/.vs/WikipediaTestProject/v16/Server/sqlite3/storage.ide
+/.vs/WikipediaTestProject/v16/Server/sqlite3/db.lock
+/WikipediaTestProject/bin/Debug/netcoreapp2.1
+/WikipediaTestProject/obj
+/.vs/WikipediaTestProject/v16/TestStore/0
+/.vs/WikipediaTestProject/v16
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
